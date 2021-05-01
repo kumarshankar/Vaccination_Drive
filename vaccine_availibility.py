@@ -1,11 +1,8 @@
 import requests
-
 import json
 import pandas as pd
 import datetime
-
 from fuzzywuzzy import fuzz
-
 from fuzzywuzzy import process
 
 
