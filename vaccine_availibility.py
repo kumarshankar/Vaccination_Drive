@@ -71,7 +71,6 @@ class Covictory:
 
     def generate_dates(self):
         """
-
         This function generates next 20 days which will be used to find vaccine availibility in next 20 days
         """
 
@@ -87,14 +86,10 @@ class Covictory:
 
 
     def get_vaccine_availibility(self, district_name):
-
         dates = self.generate_dates()
-
         district_id = self.get_districtid_by_name(district_name)
         dfs = list()
-
         for v_date in dates:
-
             response = requests.get("https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id={}&date={}".format(district_id,v_date))
 
             if response.ok:
