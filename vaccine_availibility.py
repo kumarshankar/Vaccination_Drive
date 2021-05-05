@@ -8,6 +8,9 @@ from fuzzywuzzy import process
 
 
 class Covictory:
+    """
+    This call handles all the calls to api setu to get districts, state and vaccine availibility
+    """
 
     def __init__(self, state):
         """
